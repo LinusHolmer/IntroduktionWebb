@@ -61,6 +61,56 @@
 </main>
 
 <footer>
+  <section>
+  <h3>Kontakta mig</h3>
+    <ul>
+      <li>Email: <a href="mailto:linus.holmer@stud.sti.se">linus.holmer@stud.sti.se</a></li>
+      <li>Telefonnummer <a href="tel:+0709991262">0709991262</a></li>
+    </ul>
+
+    <form action="/submit" method="post">
+      <label for="name">Namn:</label>
+      <input type="text" id="name" name="name" required>
+      <br/>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br/>
+
+      <label for="telNumber">Telefonnummer:</label>
+      <input type="tel" id="telNumber" name="telNumber" required>
+
+      <p>Blivande kund eller nuvarande kund?</p>
+      <input type="radio" id="future" name="customer" value="future" required>
+      <label for="future">Blivande kund</label>
+
+      <input type="radio" id="present" name="customer" value="present" required>
+      <label for="present">Nuvarande kund</label>
+      <br/>
+
+      <label for="subject">Ämne:</label>
+      <input type="text" id="subject" name="subject" required>
+      <br/>
+
+      <label for="message">Meddelande:</label>
+      <input type="text" id="message" name="message" required>
+      <br/>
+
+      <p>Godkänner du vår integritetspolicy?</p>
+      <input type="checkbox" id="policy" name="policy" value="policy" required>
+      <label for="policy">Ja</label>
+      <br/>
+
+      <label for="birthday">Födelsedag:</label>
+      <input type="date" id="birthday" name="birthday">
+      <br/>
+
+      <input type="submit" value="Skicka">
+
+
+    </form>
+
+  </section>
 
 </footer>
 
