@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="webstore.css">
+  <title>Kontakta oss</title>
+</head>
+<body>
+
+<header>
+
+  <nav class="topNav">
+    <a href="index.html">Startsidan</a>
+    <a href="product.html">Produkter</a>
+    <a href="contact.html">Kontakta oss</a>
+    <a href="about.html">Om oss</a>
+  </nav>
+
+</header>
+
+<main>
+  <section>
+    <h3>Kontakt formulär</h3>
+
+    <form class="contact-text" action="/submit" method="post">
+      <label for="name">Namn:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <br>
+
+      <label for="subject">Ämne:</label>
+      <select id="subject" name="subject">
+        <option value="question">Frågor</option>
+        <option value="help">Hjälp</option>
+        <option value="return-item">Returnera produkt</option>
+      </select>
+      <br>
+
+      <label for="message">Meddelande:</label>
+      <input type="text" id="message" name="message" required>
+      <br>
+
+      <p>Godkänner du vår integritetspolicy?</p>
+      <input type="checkbox" id="policy" name="policy" value="policy" required>
+      <label for="policy">Ja</label>
+      <br>
+
+      <input type="submit" value="Skicka">
+
+
+    </form>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <p>&copy; 2025 Web Store. All rights reserved.</p>
+
+</footer>
+
+
+</body>
+</html>
