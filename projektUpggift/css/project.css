@@ -1,23 +1,17 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  /*
+body.home {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-
-   */
-
 }
 
-.indexImage{
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.topNav {
+.top-nav {
   overflow: hidden;
   width: 100%;
   position: fixed;
@@ -30,7 +24,7 @@ body {
   align-items: center;
 }
 
-.topNav a {
+.top-nav a {
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -38,12 +32,12 @@ body {
   font-size: 17px;
 }
 
-.topNav a:hover {
+.top-nav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.topNav .icon {
+.top-nav .icon {
   display: none;
 }
 
@@ -53,29 +47,102 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topNav #myLinks {
+  .top-nav #myLinks {
     display: none;
     flex-direction: column;
     width: 100%;
     background-color: #333;
   }
 
-  .topNav a.icon {
+  .top-nav a.icon {
     display: block;
-    color: white;
+    background: #333;
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  .topNav #myLinks a {
+  .top-nav #myLinks a {
     text-align: left;
     padding: 10px 20px;
   }
 }
 
 @media screen and (min-width: 601px) {
-  .topNav #myLinks {
+  .top-nav #myLinks {
     display: flex;
   }
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-section h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.welcome-section article {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 300px;
+  gap: 20px;
+}
+
+.article {
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.article:hover {
+  transform: scale(1.05);
+}
+
+.article img {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.article h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-size: 0.9em;
+  color: #555;
 }

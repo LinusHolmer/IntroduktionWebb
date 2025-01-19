@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teknik</title>
   <link rel="stylesheet" href="css/project.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <header>
-
-  <nav class="topNav">
-    <a href="index.html" class="active">Home</a>
+  <nav class="top-nav">
+    <a href="index.html" class="active">Start</a>
     <div id="myLinks">
       <a href="tech.html">Teknik</a>
       <a href="cv.html">CV</a>
@@ -22,13 +21,52 @@
     <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
       <i class="fa fa-bars"></i>
     </a>
-
   </nav>
-
 </header>
 
 <main>
+  <section class="filter-section">
+    <label for="filter">Filtrera efter ämne:</label>
+    <select id="filter" onchange="filterArticles()">
+      <option value="all">Alla</option>
+      <option value="java">Java</option>
+      <option value="sql">SQL</option>
+      <option value="web">Webbutveckling</option>
+      <option value="gymnasium">Gymnasium</option>
+    </select>
+  </section>
 
+  <section class="articles">
+    <article class="article" data-category="java">
+      <h2>Java A och B</h2>
+      <img src="images/java.png" alt="Java">
+      <p>Jag har läst två kurser inom Java-programmering där jag lärde mig om objektorienterad programmering, arv och polymorfism.</p>
+    </article>
+
+    <article class="article" data-category="sql">
+      <h2>Databashantering</h2>
+      <img src="images/sql.png" alt="SQL">
+      <p>Under denna kurs kombinerade vi Java och SQL för att bygga applikationer som interagerar med databaser.</p>
+    </article>
+
+    <article class="article" data-category="web">
+      <h2>Introduktion till webbutveckling</h2>
+      <img src="images/web.png" alt="Webbutveckling">
+      <p>Jag fick grundläggande kunskaper inom HTML, CSS och JavaScript, inklusive responsiv design och grundläggande webbprojekt.</p>
+    </article>
+
+    <article class="article" data-category="gymnasium">
+      <h2>Systemutveckling på gymnasiet</h2>
+      <img src="images/gymnasium.jpg" alt="Gymnasium">
+      <p>På gymnasiet fick jag en introduktion till systemutveckling, inklusive mjukvarudesign och grundläggande programmering.</p>
+    </article>
+
+    <article class="article" data-category="java">
+      <h2>Avancerad Java-programmering</h2>
+      <img src="images/advanced-java.png" alt="Avancerad Java">
+      <p>Jag fördjupade mig inom Java med projekt som inkluderade multitrådning, GUI-design och filhantering.</p>
+    </article>
+  </section>
 </main>
 
 <footer>
