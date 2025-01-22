@@ -32,7 +32,17 @@
 
     <article>
       <h1>About Linus Holmer</h1>
-      <img src="images/me.png" alt="me">
+      <img
+        src="images/me.png"
+        srcset="
+          images/me.png 480w,
+          images/me.png 800w,
+          images/me.png 1200w"
+        sizes="(max-width: 600px) 480px,
+         (max-width: 1200px) 800px,
+         1200px"
+        alt="A picture of me">
+
       <p>I'm a dedicated gamer, modder, and aspiring Java developer working towards a remote career.
         I'm passionate about The Elder Scrolls and Fallout franchise, and enjoy creating mods and immersing myself in the game.
         Fitness is important to me, and I have a structured workout plan focused on pushing myself.
