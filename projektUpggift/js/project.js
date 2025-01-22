@@ -9,7 +9,7 @@ function toggleMenu() {
 
 function filterArticles() {
   const filter = document.getElementById("filter").value;
-  const articles = document.querySelectorAll(".article");
+  const articles = document.querySelectorAll(".tech-article");
 
   articles.forEach((article) => {
     if (filter === "all" || article.dataset.category === filter) {

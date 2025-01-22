@@ -126,7 +126,7 @@ body {
 }
 
 /* TECH SECTION */
-.articles {
+.tech-articles {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -134,7 +134,7 @@ body {
   gap: 20px;
 }
 
-.article {
+.tech-article {
   background-color: white;
   max-width: 300px;
   border-radius: 5px;
@@ -143,22 +143,22 @@ body {
   transition: transform 0.2s;
 }
 
-.article:hover {
+.tech-article:hover {
   transform: scale(1.05);
 }
 
-.article img {
+.tech-article img {
   width: 100%;
   height: 50%;
   border-radius: 5px;
 }
 
-.article h2 {
+.tech-article h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
 
-.article p {
+.tech-article p {
   font-size: 0.9em;
   color: #555;
 }
